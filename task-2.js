@@ -1,4 +1,7 @@
 function calcAverageCalories(days) {
+    if (days == "") {
+        return 0;
+    } else {
     let totalCalories = 0;
 
     for (const arg of days) {
@@ -7,6 +10,7 @@ function calcAverageCalories(days) {
 
     const avgCalories = totalCalories / days.length;
     return avgCalories;
+    }
 }
 
 console.log(
